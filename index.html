@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Weather App</title>
+</head>
+<body class="bg-gray-900 flex justify-center items-center min-h-screen">
+    <div class="bg-gray-800 p-4 rounded">
+        <h3 class="text-white text-2xl mb-4 font-bold">Weather App</h3>
+        <input type="text" class="text-white bg-gray-700 rounded px-2 py-1 mr-3 hover:outline-none focus:ring-1" id="weather-input" placeholder="Enter city">
+        <button class="bg-purple-600 rounded px-2 py-1 text-white hover:bg-purple-700" id="weather-submit">Submit</button>
+        <div class="bg-gray-700 rounded p-3 mt-5 hidden" id="weather-info">
+            <h4 class="text-white text-xl" id="weather-city"></h4>
+            <p class="text-white text-sm" id="weather-temperature"></p>
+            <p class="text-white text-sm" id="weather-description"></p>
+        </div>
+        <p class="bg-gray-700 rounded p-3 mt-5 text-red-400 text-sm items-center hidden" id="error-message"></p>
+
+    </div>
+    <script src="script.js"></script>
+</body> 
+</html>
