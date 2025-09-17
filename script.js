@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   weatherSubmit.addEventListener("click", async () => {
     const weatherInput = document.getElementById("weather-input").value.trim();
     if (weatherInput == "") return;
-    const API_KEY = "b00643489f67b6f926eb50e3fa3aa3de";
+    const API_KEY = "XXXXXXXXXXXXXXXXXXX";
     try {
       const weatherData = await fetchWeather(weatherInput, API_KEY);
     } catch (error) {
